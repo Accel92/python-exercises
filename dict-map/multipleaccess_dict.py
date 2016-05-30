@@ -1,4 +1,4 @@
-family_status = {'Dariusz':'Father','Katarzyna':'Mother',
+family_status = {'Darek':'Dad','Catharine':'Mom',
 'Damian':'First son', 'Bartosz': 'Second son'}
 # status from name
 
@@ -9,24 +9,24 @@ family_status = {'Dariusz':'Father','Katarzyna':'Mother',
 
 age = dict()
 # age from status
-age['Pierwszy Syn'] = 24
-age['Drugi Syn'] = 14
-age['Tata'] = 45
-age['Mama'] = 45
+age['First son'] = 24
+age['Second son'] = 14
+age['Dad'] = 45
+age['Mom'] = 45
 # second way to make a dictionary, you make an empty one
 # and then add pairs of key (in parenthesis) and value (after equation)
 
 days_lived = {24:24*365, 14:14*365, 45:45*365}
 # days lived from age
 
-print "Damian w swojej rodzinie jest:", family_status['Damian']
-print "Bartosz w swojej rodzinie jest:", family_status['Bartosz']
-print "Poza tym Bartosz ma %d lat" % age[family_status['Bartosz']]
-print "Tyle lat to %d dni" % days_lived[age['Drugi Syn']]
+print "Damian is a %s in his family" % family_status['Damian']
+print "Bartosz is a %s in his family", % family_status['Bartosz']
+print "Also Bartosz is" % age[family_status['Bartosz']]
+print "He has lived for %s days" % days_lived[age['Drugi Syn']]
 
-print "Ilosc dni zycia 45-cio latka:", days_lived[45]
-print "ilosc dni zycia taty", days_lived[age['Tata']]
-print "ilosc dni zycia Darka, mojego taty", days_lived[age[family_status['Dariusz']]]
+print "Days lived by 45 years old man", days_lived[45]
+print "Days lived by my dad", days_lived[age['Tata']]
+print "Days lived by Darek, who is my dad", days_lived[age[family_status['Darek']]]
 
 inv_age = {v: k for k, v in age.items()}	#invert dictionary
 
