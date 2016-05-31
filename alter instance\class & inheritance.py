@@ -39,5 +39,7 @@ next_counter = InheritedCounter()
 next_counter.count_instance()
 next_counter.count_instance()
 
+next_counter.count_class()
+
 print "Instance has counted from inherited (class) value up to:",next_counter.get_secret_instance_counter()
 print "Class has counted from inherited (class) value up to:", next_counter.get_secret_class_counter()
