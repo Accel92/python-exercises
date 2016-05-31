@@ -1,4 +1,4 @@
-class JustCounter(object):
+class SimpleCounter(object):
    
 	#def __init__(self):
 	#	self.__secretCount = 0
@@ -31,7 +31,7 @@ counter.count_class()
 '''print JustCounter.__secretCount'''	# will not work as well
 print "Class has counted up to:", counter.get_secret_class_counter()
 
-class InheritedCounter(JustCounter):
+class InheritedCounter(SimpleCounter):
 	
 	pass
 
