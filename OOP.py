@@ -54,7 +54,7 @@ class Warrior(Enemy):
 	fight_plot = "Enemy Warrior appears in front of you.\nYou need to fight!"
 	first_hit_chance_ratio = 30
 	
-	def __init__(self, level, special_status = "pekepeke"):
+	def __init__(self, level, special_status = ""):
 		super(Warrior, self).__init__(level, special_status)
 		self._exp_reward = 100 + 50* self._level
 		#del player_template
